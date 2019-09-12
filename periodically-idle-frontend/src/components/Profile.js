@@ -32,15 +32,24 @@ const useStyles = makeStyles({
 
 export default function ImageAvatars(props) {
   const classes = useStyles();
-
+  const showelements = () => {
+    let ra = []
+    for (let i = 0; i < props.numbers_owned.length; i++) {
+        const element_owned = props.numbers_owned[i];
+        const element_name = props.elementnames[i]
+        ra.push(<Grid item sm = {12} justify="center" alignItems="center"><h4>{element_owned} {element_name} owned</h4></Grid>)
+    }
+    return ra
+}
   return (<>
   <Header history={props.history} currentPage={1}/>
     <Grid container justify="center" alignItems="center">
       <Avatar alt="Remy Sharp" src={Hello} className={classes.bigAvatar} />
       <h1>{props.username} </h1>
-      <Grid item sm = {12} justify="center">
+      <Grid item sm = {12} justify="center" alignItems="center">
       <h4>Most Atomic Weight held at once - {props.maxWeight} </h4>
       </Grid>
+      {showelements(props)}
     </Grid>
     </>
       );

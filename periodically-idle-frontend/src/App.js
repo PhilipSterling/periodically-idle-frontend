@@ -183,6 +183,8 @@ autoIncrementAtomicWeight = (nonWholeNumber = 0) => {
       tenHeliumAccepted={this.state.tenHeliumAccepted}
       genPerSec = {this.genPerSec}/>}/>
       <Route exact path = "/profile" render={(props) => <Profile {...props} incrementAtomicWeight={this.incrementAtomicWeight} maxWeight={this.state.max_owned} username={"Philip"} 
+      elementnames = {elementnames}
+      numbers_owned = {this.state.numbers_owned}
       genPerSec = {this.genPerSec}/>}/>
       <Route path = "/element" render = {(props) => <Element {...props} incrementAtomicWeight={this.incrementAtomicWeight} atomicWeight={this.state.atomicWeight} numbers_owned={this.state.numbers_owned} element_names={elementnames} 
       genPerSec = {this.genPerSec}/>}/>

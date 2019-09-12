@@ -52,7 +52,6 @@ export default function ControlledExpansionPanels(props) {
         setExpanded(isExpanded ? panel : false);
       }
   };
-  debugger;
   return (<>
     <Header history={props.history}/>
     <div className={classes.root}>
@@ -64,7 +63,7 @@ export default function ControlledExpansionPanels(props) {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography className={classes.heading}>Fact 1 - 5 Elements Required - {props.location.neededItems.numOwned} Elements Owned</Typography>
+          <Typography className={classes.heading}>Fact 1 - 5 {props.location.neededItems.elementName}s Required - {props.location.neededItems.numOwned} {props.location.neededItems.elementName}s Owned</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -78,7 +77,7 @@ export default function ControlledExpansionPanels(props) {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography className={classes.heading}>Fact 1 - 10 Elements Required - {props.location.neededItems.numOwned} Elements Owned</Typography>
+          <Typography className={classes.heading}>Fact 1 - 10 {props.location.neededItems.elementName}s Required - {props.location.neededItems.numOwned} {props.location.neededItems.elementName}s Owned</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -92,7 +91,7 @@ export default function ControlledExpansionPanels(props) {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography className={classes.heading}>Fact 1 - 25 Elements Required - {props.location.neededItems.numOwned} Elements Owned</Typography>
+          <Typography className={classes.heading}>Fact 1 - 25 {props.location.neededItems.elementName}s Required - {props.location.neededItems.numOwned} {props.location.neededItems.elementName}s Owned</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -106,7 +105,7 @@ export default function ControlledExpansionPanels(props) {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography className={classes.heading}>Fact 1 - 50 Elements Required - {props.location.neededItems.numOwned} Elements Owned</Typography>
+          <Typography className={classes.heading}>Fact 1 - 50 {props.location.neededItems.elementName}s Required - {props.location.neededItems.numOwned} {props.location.neededItems.elementName}s Owned</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -120,7 +119,7 @@ export default function ControlledExpansionPanels(props) {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography className={classes.heading}>Fact 1 - 100 Elements Required - {props.location.neededItems.numOwned} Elements Owned</Typography>
+          <Typography className={classes.heading}>Fact 1 - 100 {props.location.neededItems.elementName}s Required - {props.location.neededItems.numOwned} {props.location.neededItems.elementName}s Owned</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>

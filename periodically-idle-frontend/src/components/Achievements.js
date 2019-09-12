@@ -41,7 +41,7 @@ export default function ControlledExpansionPanels(props) {
       }
   };
   return (<>
-    <Header history={props.history}/>
+    <Header history={props.history} currentPage={2}/>
     <div className={classes.root}>
     
       <ExpansionPanel style={chooseColor(props.tenHydrogenRequired)} expanded={expanded === 'panel1'} onChange={handleChange('panel1', props.tenHydrogenRequired)}>
